@@ -29,8 +29,8 @@ public class SeparateChainingHashST<Key, Value> {
 
     // Node class
     private static class Node {
-        private Object key;
-        private Object val;
+        private Object key; // no generic array creation
+        private Object val; // no generic array creation
         private Node next;
 
         public Node(Object key, Object val, Node next) {
